@@ -6,55 +6,55 @@ import type React from 'react';
    const songs=[
     {
 name:'Oshi No Ko (IDOL)',
-imgurl:'./public/oshi no ko.jpg',
-audiourl:'./public/oshi no ko.mp3'
+imgurl:'./oshi no ko.jpg',
+audiourl:'./oshi no ko.mp3'
 },
 {
 name:'Fly Me To The Moon',
-imgurl:'./public/fly me to the moon.jpg',
+imgurl:'./fly me to the moon.jpg',
 audiourl:'https://github.com/fatimaAlzahraa-almaz/music-play/raw/main/fly%20me%20to%20the%20moon.mp3'
 },
 {
 name:'Breath-Years & Years',
-imgurl:'./public/breath.jpg',
+imgurl:'./breath.jpg',
 audiourl:'https://github.com/fatimaAlzahraa-almaz/music-play/raw/main/breath.mp3'
 },
 {
 name:'Dark Opening',
-imgurl:'./public/dark.png',
+imgurl:'./dark.png',
 audiourl:'https://github.com/fatimaAlzahraa-almaz/music-play/raw/main/Dark.mp3'
 }
  ,
  {
 name:'Rose-APT',
-imgurl:'./public/apt.jpg',
+imgurl:'./apt.jpg',
 audiourl:'https://github.com/fatimaAlzahraa-almaz/music-play/raw/main/Rose-Apt.mp3'
 }
 ,
  
 {
 name:'Call Of Silence -AOT',
-imgurl:'./public/call of silence.jpg',
+imgurl:'./call of silence.jpg',
 audiourl:'https://github.com/fatimaAlzahraa-almaz/music-play/raw/main/call%20of%20silence.mp3'
 },
 {
 name:'Round and Round',
-imgurl:'./public/round.jpg',
+imgurl:'./round.jpg',
 audiourl:'https://github.com/fatimaAlzahraa-almaz/music-play/raw/main/Round%20and%20Round.mp3'
 },
 {
 name:'Mortals Funk (Remix)',
-imgurl:'./public/mortall funk.jpg',
+imgurl:'./mortall funk.jpg',
 audiourl:'https://github.com/fatimaAlzahraa-almaz/music-play/raw/main/Mortals%20Funk%20Remix.mp3'
 },{
 name:'2 Phut Hon Funk',
-imgurl:'./public/phot hon.jpg',
-audiourl:'./public/2 Phut Hon Funk.mp3'
+imgurl:'./phot hon.jpg',
+audiourl:'./2 Phut Hon Funk.mp3'
 },
 {
 name:'Hurt-maikubi',
-imgurl:'./public/hurt.jpg',
-audiourl:'./public/hurt maikubi.mp3'
+imgurl:'./hurt.jpg',
+audiourl:'./hurt maikubi.mp3'
 },
  
  
@@ -111,13 +111,13 @@ if(play)
 {
     setplay(false);
     audioRef.current?.pause();
-    setimgplayer('./public/Frame 3.png')
+    setimgplayer('./Frame 3.png')
 
 }
 else{
     setplay(true);
     audioRef.current?.play();
-    setimgplayer('./public/stopmusic.png')
+    setimgplayer('./stopmusic.png')
 
 }
  }
@@ -163,10 +163,10 @@ setindex((index+1)%songs.length);
              </div>
 
             <div className="btnsbox">
-  <button onClick={hundleleft} className='btn leftr'><img className="btnimg leftrimg"src="./public/leftbt.png"/></button>
+  <button onClick={hundleleft} className='btn leftr'><img className="btnimg leftrimg"src="./leftbt.png"/></button>
   
   <button  className='btn' onClick={()=>hundleplay(isplay)}><img className="btnimg" src={imgplayer}/></button>
-  <button  className='btn leftr' onClick={hundelright}><img className="btnimg leftrimg" src="./public/rightbt 4.png"/></button>
+  <button  className='btn leftr' onClick={hundelright}><img className="btnimg leftrimg" src="./rightbt 4.png"/></button>
   
 </div>
   
