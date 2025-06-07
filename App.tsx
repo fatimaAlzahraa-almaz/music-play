@@ -5,10 +5,7 @@ import type React from 'react';
 
    const songs=[
     {
-name:'Oshi No Ko (IDOL)',
-imgurl:'./oshi no ko.jpg',
-audiourl:'./oshi no ko.mp3'
-},
+ 
 {
 name:'Fly Me To The Moon',
 imgurl:'./fly me to the moon.jpg',
