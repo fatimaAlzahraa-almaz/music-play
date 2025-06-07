@@ -1,0 +1,148 @@
+
+.wrap{
+
+      perspective: 1000px;
+      margin: 10%;
+ }
+.container{
+    
+  border-radius: 25px;
+  box-shadow: 10px 10px 2px 2px rgb(172, 171, 171);
+   width:450px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+    background-color:  rgb(219, 187, 241);
+   
+ align-items: center;
+ 
+}
+.head{
+  display:flex;
+ 
+}
+ 
+
+.doimg{
+  width:70px;
+  padding:2px;
+  mix-blend-mode: multiply;
+ background-color: transparent;
+ animation: movee 2s infinite alternate;
+}
+@keyframes movee {
+  0%{
+    transform: scale(1) rotate(0deg);
+  }
+  100%{
+    transform: scale(1.1)  rotate(20deg);
+  }
+}
+.btn{
+  background-color:transparent;
+  border:none;
+  padding: 10px;
+  margin: 0 10px;
+ 
+}
+.btn:hover{
+transform: scale(1.1);
+cursor: pointer;
+}
+
+.btnimg{
+  width:70px;
+  border:none;
+}
+.songname{
+ 
+  background-color: rgb(241, 237, 232);
+  font-family: cursive;
+  border-radius: 35%;
+  padding:7px;
+ color:rgb(200, 133, 238);
+  margin:7px;
+   
+  box-shadow: 2px 2px rgb(201, 198, 200);
+} 
+.hname{
+   animation: move 2s infinite alternate;
+  
+}
+@keyframes move{
+  0%{
+    transform: scale();
+  }
+  100%{
+   transform: scale(1.1); 
+  }
+}
+.imgdiv{
+  background-color: rgb(242, 238, 243);
+   box-shadow: 2px 2px rgb(174, 172, 172);
+  padding:10px;
+}
+.imgsong{
+  width:300px;
+  height: 300px;
+}
+.inputclass{
+   width:300px;
+  
+}
+.btnsbox{
+  display:flex;
+  justify-content: center;
+   
+  background-color: #ecdafe;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 2px 2px rgb(179, 177, 177);
+}
+
+.leftrimg{
+  width:50px;
+}
+/*
+#progressBar::-webkit-slider-runnable-track {
+   cursor: pointer;
+    background: #eee6ef; 
+    border-radius: 8px; 
+}
+*/
+  #progressBar{
+      -webkit-appearance: none;  
+    -moz-appearance: none;    
+    appearance: none;        
+
+    width: 300px;  
+    height: 10px;   
+    background: pink; 
+    margin: 10px 0;  
+    cursor: pointer;
+  }
+  #progressBar::-webkit-slider-runnable-track {
+    border-radius: 8px;
+    height: 15px;  
+    background:  white;
+    
+  
+}
+.line{
+  width:100px;
+   
+  transform:translateX(-90px)
+   
+}
+#progressBar::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    width: 15px;  
+    height: 15px; 
+    background: #a125c7; 
+    border-radius: 50%;  
+  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+    margin-top: -0px;  
+    cursor: grab; 
+    
+}
